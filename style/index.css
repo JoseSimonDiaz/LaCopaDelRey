@@ -51,6 +51,8 @@ body::-webkit-scrollbar {
 
 /* fin body */
 
+/* header */
+
 header {
   background: linear-gradient(to bottom, var(--primary), var(--background));
   width: 100%;
@@ -893,7 +895,6 @@ ul {
 }
 .footer-widget ul li {
   display: inline-block;
-  float: left;
   width: 50%;
   margin-bottom: 12px;
 }
@@ -962,14 +963,13 @@ footer ::placeholder{
 
 @media (min-width: 768px) {
 
-  #iniciarSesion{
+#iniciarSesion {
     height: 60px;
-    width: 150px;
+    /* width: 90px; */
+    padding: 5px;
     font-size: 1.5rem;
     font-weight: 600;
-    
   }
-
   
     .cart {
         position: absolute;
@@ -1022,8 +1022,12 @@ footer ::placeholder{
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .navbar-list{
     margin: 10px;
+  }
+
+  #iniciarSesion {
+    width: 190px;
   }
 }
