@@ -43,6 +43,7 @@ body {
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  background: linear-gradient(to bottom, var(--background), var(--primary));
 }
 
 body::-webkit-scrollbar {
@@ -78,17 +79,16 @@ header .logo {
   display: none;
 }
 
-
 /*search*/
 
-#header .searchContainer{
+#header .searchContainer {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#header .searchContainer form{
+#header .searchContainer form {
   width: 300px;
   margin: 10px;
   padding: 10px;
@@ -100,7 +100,7 @@ header .logo {
   border: 1px solid var(--primari);
 }
 
-#header .searchContainer form input{
+#header .searchContainer form input {
   background: transparent;
   border: none;
   outline: none;
@@ -117,7 +117,7 @@ header .logo {
   /* padding: 3px; */
 }
 
-#header .searchContainer form button{
+#header .searchContainer form button {
   border: none;
   background: transparent;
   cursor: pointer;
@@ -126,13 +126,12 @@ header .logo {
   justify-content: center;
 }
 
-#header .searchContainer form button i{
+#header .searchContainer form button i {
   color: var(--primary);
   font-size: 1.6rem;
   /* margin: 0 10px 0 10px; */
   font-weight: 800;
 }
-
 
 /*carrito*/
 
@@ -272,7 +271,7 @@ header .logo {
   font-size: 18px;
   border: none;
 }
-.btn-add a{
+.btn-add a {
   text-decoration: none;
   color: var(--text-white);
   font-weight: 400;
@@ -301,20 +300,20 @@ header .logo {
 }
 
 .navbar-list {
-    position: absolute;
-    top: 47px;
-    left: -227px;
-    width: 300px;
-    flex-direction: column;
-    background: linear-gradient(to top, var(--primary), var(--background));
-    border: 2px solid var(--electric);
-    border-top: 0px;
-    border-radius: 0px 0px 15px 15px;
-    align-items: flex-start;
-    padding: 45px 30px;
-    gap: 25px;
-    z-index: 2;
-    display: none;
+  position: absolute;
+  top: 47px;
+  left: -227px;
+  width: 300px;
+  flex-direction: column;
+  background: linear-gradient(to top, var(--primary), var(--background));
+  border: 2px solid var(--electric);
+  border-top: 0px;
+  border-radius: 0px 0px 15px 15px;
+  align-items: flex-start;
+  padding: 45px 30px;
+  gap: 25px;
+  z-index: 2;
+  display: none;
 }
 
 .navbar-list a {
@@ -328,8 +327,8 @@ header .logo {
   font-weight: 600;
 }
 
- /* Mostramos el icono del menu */
- .menu-label {
+/* Mostramos el icono del menu */
+.menu-label {
   display: flex;
   order: 2;
   cursor: pointer;
@@ -343,7 +342,6 @@ header .logo {
 #menu-toggle:checked + .navbar-list {
   display: flex;
 }
-
 
 .menu-label img {
   height: 20px;
@@ -386,7 +384,7 @@ header .logo {
   transform: scaleX(1);
 }
 
-#iniciarSesion{
+#iniciarSesion {
   background-color: var(--btn-bg);
   border-radius: 10px;
   height: 40px;
@@ -397,21 +395,18 @@ header .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
-#iniciarSesion a{
+#iniciarSesion a {
   font-size: 2rem;
   color: var(--bg-white);
-
 }
 
-#iniciarSesion:hover{
+#iniciarSesion:hover {
   background-color: var(--fire);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-
 
 /*fin header*/
 
@@ -426,6 +421,8 @@ header .logo {
   align-items: center;
   justify-content: center;
   padding-bottom: 20px;
+  padding-top: 20px;
+  margin: 100px;
 }
 
 #categori {
@@ -765,12 +762,12 @@ a {
 
 #contactanos .form-control,
 #contactanos textarea {
-  font-size: 1.2rem; 
-  padding: 1rem; 
+  font-size: 1.2rem;
+  padding: 1rem;
 }
 
 #contactanos iframe {
-  height: 400px; 
+  height: 400px;
 }
 
 #contactanos .btn {
@@ -918,7 +915,7 @@ ul {
   color: #fff;
 }
 
-footer ::placeholder{
+footer ::placeholder {
   color: var(--nav-bg);
   font-weight: 400;
 }
@@ -962,33 +959,31 @@ footer ::placeholder{
 /*fin footer*/
 
 @media (min-width: 768px) {
-
-#iniciarSesion {
+  #iniciarSesion {
     height: 60px;
     /* width: 90px; */
     padding: 5px;
     font-size: 1.5rem;
     font-weight: 600;
   }
-  
-    .cart {
-        position: absolute;
-        top: 140px;
-        right: -12px;
-        width: 360px;
-        padding: 20px 30px;
-        background: linear-gradient(to top, var(--primary), var(--background));
-        border-left: 1px solid var(--nav-bg);
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        height: calc(-65px + 100vh);
-        overflow-y: scroll;
-        z-index: 2;
-        transform: translate(200%);
-        transition: 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
-    }
 
+  .cart {
+    position: absolute;
+    top: 140px;
+    right: -12px;
+    width: 360px;
+    padding: 20px 30px;
+    background: linear-gradient(to top, var(--primary), var(--background));
+    border-left: 1px solid var(--nav-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: calc(-65px + 100vh);
+    overflow-y: scroll;
+    z-index: 2;
+    transform: translate(200%);
+    transition: 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+  }
 
   #menu-toggle,
   #cart-toggle,
@@ -997,14 +992,14 @@ footer ::placeholder{
   }
 
   .navbar-list {
-   position:initial;
-   align-items: center;   
-   flex-direction: row;
-   display: flex;
-   border: none;
-   background: transparent;
-   justify-content: flex-end;
-   align-items: center;
+    position: initial;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    border: none;
+    background: transparent;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   #gif .IMG img {
@@ -1017,13 +1012,10 @@ footer ::placeholder{
   #banner img {
     width: 100%;
   }
-
- 
 }
 
-
 @media (min-width: 1024px) {
-  .navbar-list{
+  .navbar-list {
     margin: 10px;
   }
 

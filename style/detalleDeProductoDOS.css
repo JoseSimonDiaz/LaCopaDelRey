@@ -605,25 +605,24 @@ main #comentariosClientes .puntuaje h2 {
   padding-left: 15px;
 }
 
-
-.calificaciones{
+.calificaciones {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.starPuntuaje i{
+.starPuntuaje i {
   color: var(--fire);
   font-size: 1.7rem;
 }
 
-.starPuntuaje p{
+.starPuntuaje p {
   font-style: 2rem;
   font-weight: 700;
 }
 
-.conteinerCaracteristicas{
+.conteinerCaracteristicas {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -633,30 +632,30 @@ main #comentariosClientes .puntuaje h2 {
   /* border-top: 1px solid var(--background); */
 }
 
-.caracteristicas{
+.caracteristicas {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.caracteristicas p{
+.caracteristicas p {
   font-size: 1.3rem;
   font-weight: 700;
 }
 
-.caracteristicas i{
+.caracteristicas i {
   color: var(--fire);
   font-size: 1.3rem;
 }
 
-.conteinerCaracteristicas a{
+.conteinerCaracteristicas a {
   /* text-decoration: none; */
   color: var(--background);
   font-weight: 700;
   font-size: 1.3rem;
 }
 
-.comentariosConteiner{
+.comentariosConteiner {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -667,19 +666,19 @@ main #comentariosClientes .puntuaje h2 {
   border-radius: 12px;
 }
 
-.comentariosDestacados{
+.comentariosDestacados {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.comentariosDestacados h3{
+.comentariosDestacados h3 {
   font-size: 1.6rem;
   font-weight: 700;
 }
 
-.comentariosDestacados a{
+.comentariosDestacados a {
   text-decoration: none;
   background: var(--btn-bg);
   color: var(--bg-white);
@@ -690,41 +689,41 @@ main #comentariosClientes .puntuaje h2 {
   cursor: pointer;
 }
 
-.comentariosDestacados a:hover{
+.comentariosDestacados a:hover {
   background: var(--fire);
   transition: all 0.3s ease-in-out;
 }
 
-.puntuajeUser{
+.puntuajeUser {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.puntuajeUser .conteinerStar{
+.puntuajeUser .conteinerStar {
   color: var(--fire);
   font-weight: 800;
   font-size: 1rem;
 }
 
-.puntuajeUser p{
+.puntuajeUser p {
   font-size: 1.1rem;
   font-weight: 700;
 }
 
-.comentarios p{
+.comentarios p {
   font-size: 1.2rem;
   font-weight: 500;
 }
 
-.likeConteiner{
+.likeConteiner {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.likeConteiner p{
+.likeConteiner p {
   border: 1px solid var(--background);
   border-radius: 15px;
   padding: 5px;
@@ -733,23 +732,23 @@ main #comentariosClientes .puntuaje h2 {
   cursor: pointer;
 }
 
-.likeConteiner p:hover{
+.likeConteiner p:hover {
   background: var(--fire);
   transition: all 0.3s ease-in-out;
   border: 1px solid var(--fire);
 }
 
-.likeConteiner i{
+.likeConteiner i {
   font-size: 1.2rem;
 }
 
-.conteinerP{
+.conteinerP {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.conteinerP a{
+.conteinerP a {
   border: 1px solid var(--background);
   color: var(--background);
   text-decoration: none;
@@ -760,7 +759,7 @@ main #comentariosClientes .puntuaje h2 {
   cursor: pointer;
 }
 
-.conteinerP a:hover{
+.conteinerP a:hover {
   background: var(--fire);
   transition: all 0.3s ease-in-out;
   border: 1px solid var(--fire);
@@ -1011,23 +1010,21 @@ footer ::placeholder {
     max-width: 584px;
   }
 
-  main #comentariosClientes{
+  main #comentariosClientes {
     flex-direction: row;
     margin: 1px;
     gap: 6px;
     align-items: flex-start;
   }
 
-.puntuaje{
-  width: 10%;
-  height: 100%;
- 
-}
+  .puntuaje {
+    width: 10%;
+    height: 100%;
+  }
 
-.comentariosConteiner{
-  width: 90%;
-}
-
+  .comentariosConteiner {
+    width: 90%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1035,12 +1032,10 @@ footer ::placeholder {
     width: 130px;
   }
 
-  .puntuaje{
+  .puntuaje {
     width: 5%;
   }
-  .comentariosConteiner{
+  .comentariosConteiner {
     width: 96%;
   }
-
-
 }

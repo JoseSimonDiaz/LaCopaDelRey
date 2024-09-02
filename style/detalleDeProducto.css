@@ -78,17 +78,16 @@ header .logo {
   display: none;
 }
 
-
 /*search*/
 
-#header .searchContainer{
+#header .searchContainer {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#header .searchContainer form{
+#header .searchContainer form {
   width: 300px;
   margin: 10px;
   padding: 10px;
@@ -100,7 +99,7 @@ header .logo {
   border: 1px solid var(--primari);
 }
 
-#header .searchContainer form input{
+#header .searchContainer form input {
   background: transparent;
   border: none;
   outline: none;
@@ -117,7 +116,7 @@ header .logo {
   /* padding: 3px; */
 }
 
-#header .searchContainer form button{
+#header .searchContainer form button {
   border: none;
   background: transparent;
   cursor: pointer;
@@ -126,13 +125,12 @@ header .logo {
   justify-content: center;
 }
 
-#header .searchContainer form button i{
+#header .searchContainer form button i {
   color: var(--primary);
   font-size: 1.6rem;
   /* margin: 0 10px 0 10px; */
   font-weight: 800;
 }
-
 
 /*carrito*/
 
@@ -272,7 +270,7 @@ header .logo {
   font-size: 18px;
   border: none;
 }
-.btn-add a{
+.btn-add a {
   text-decoration: none;
   color: var(--text-white);
   font-weight: 400;
@@ -301,20 +299,20 @@ header .logo {
 }
 
 .navbar-list {
-    position: absolute;
-    top: 47px;
-    left: -227px;
-    width: 300px;
-    flex-direction: column;
-    background: linear-gradient(to top, var(--primary), var(--background));
-    border: 2px solid var(--electric);
-    border-top: 0px;
-    border-radius: 0px 0px 15px 15px;
-    align-items: flex-start;
-    padding: 45px 30px;
-    gap: 25px;
-    z-index: 2;
-    display: none;
+  position: absolute;
+  top: 47px;
+  left: -227px;
+  width: 300px;
+  flex-direction: column;
+  background: linear-gradient(to top, var(--primary), var(--background));
+  border: 2px solid var(--electric);
+  border-top: 0px;
+  border-radius: 0px 0px 15px 15px;
+  align-items: flex-start;
+  padding: 45px 30px;
+  gap: 25px;
+  z-index: 2;
+  display: none;
 }
 
 .navbar-list a {
@@ -328,8 +326,8 @@ header .logo {
   font-weight: 600;
 }
 
- /* Mostramos el icono del menu */
- .menu-label {
+/* Mostramos el icono del menu */
+.menu-label {
   display: flex;
   order: 2;
   cursor: pointer;
@@ -343,7 +341,6 @@ header .logo {
 #menu-toggle:checked + .navbar-list {
   display: flex;
 }
-
 
 .menu-label img {
   height: 20px;
@@ -386,7 +383,7 @@ header .logo {
   transform: scaleX(1);
 }
 
-#iniciarSesion{
+#iniciarSesion {
   background-color: var(--btn-bg);
   border-radius: 10px;
   height: 40px;
@@ -397,24 +394,20 @@ header .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
-#iniciarSesion a{
+#iniciarSesion a {
   font-size: 2rem;
   color: var(--bg-white);
-
 }
 
-#iniciarSesion:hover{
+#iniciarSesion:hover {
   background-color: var(--fire);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
-
 /*fin header*/
-
 
 /* main */
 
@@ -628,25 +621,24 @@ main #comentariosClientes .puntuaje h2 {
   padding-left: 15px;
 }
 
-
-.calificaciones{
+.calificaciones {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.starPuntuaje i{
+.starPuntuaje i {
   color: var(--fire);
   font-size: 1.7rem;
 }
 
-.starPuntuaje p{
+.starPuntuaje p {
   font-style: 2rem;
   font-weight: 700;
 }
 
-.conteinerCaracteristicas{
+.conteinerCaracteristicas {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -656,30 +648,30 @@ main #comentariosClientes .puntuaje h2 {
   /* border-top: 1px solid var(--background); */
 }
 
-.caracteristicas{
+.caracteristicas {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.caracteristicas p{
+.caracteristicas p {
   font-size: 1.3rem;
   font-weight: 700;
 }
 
-.caracteristicas i{
+.caracteristicas i {
   color: var(--fire);
   font-size: 1.3rem;
 }
 
-.conteinerCaracteristicas a{
+.conteinerCaracteristicas a {
   /* text-decoration: none; */
   color: var(--background);
   font-weight: 700;
   font-size: 1.3rem;
 }
 
-.comentariosConteiner{
+.comentariosConteiner {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -690,19 +682,19 @@ main #comentariosClientes .puntuaje h2 {
   border-radius: 12px;
 }
 
-.comentariosDestacados{
+.comentariosDestacados {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.comentariosDestacados h3{
+.comentariosDestacados h3 {
   font-size: 1.6rem;
   font-weight: 700;
 }
 
-.comentariosDestacados a{
+.comentariosDestacados a {
   text-decoration: none;
   background: var(--btn-bg);
   color: var(--bg-white);
@@ -713,41 +705,41 @@ main #comentariosClientes .puntuaje h2 {
   cursor: pointer;
 }
 
-.comentariosDestacados a:hover{
+.comentariosDestacados a:hover {
   background: var(--fire);
   transition: all 0.3s ease-in-out;
 }
 
-.puntuajeUser{
+.puntuajeUser {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.puntuajeUser .conteinerStar{
+.puntuajeUser .conteinerStar {
   color: var(--fire);
   font-weight: 800;
   font-size: 1rem;
 }
 
-.puntuajeUser p{
+.puntuajeUser p {
   font-size: 1.1rem;
   font-weight: 700;
 }
 
-.comentarios p{
+.comentarios p {
   font-size: 1.2rem;
   font-weight: 500;
 }
 
-.likeConteiner{
+.likeConteiner {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.likeConteiner p{
+.likeConteiner p {
   border: 1px solid var(--background);
   border-radius: 15px;
   padding: 5px;
@@ -756,23 +748,23 @@ main #comentariosClientes .puntuaje h2 {
   cursor: pointer;
 }
 
-.likeConteiner p:hover{
+.likeConteiner p:hover {
   background: var(--fire);
   transition: all 0.3s ease-in-out;
   border: 1px solid var(--fire);
 }
 
-.likeConteiner i{
+.likeConteiner i {
   font-size: 1.2rem;
 }
 
-.conteinerP{
+.conteinerP {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.conteinerP a{
+.conteinerP a {
   border: 1px solid var(--background);
   color: var(--background);
   text-decoration: none;
@@ -783,7 +775,7 @@ main #comentariosClientes .puntuaje h2 {
   cursor: pointer;
 }
 
-.conteinerP a:hover{
+.conteinerP a:hover {
   background: var(--fire);
   transition: all 0.3s ease-in-out;
   border: 1px solid var(--fire);
@@ -1034,23 +1026,21 @@ footer ::placeholder {
     max-width: 584px;
   }
 
-  main #comentariosClientes{
+  main #comentariosClientes {
     flex-direction: row;
     margin: 1px;
     gap: 6px;
     align-items: flex-start;
   }
 
-.puntuaje{
-  width: 10%;
-  height: 100%;
- 
-}
+  .puntuaje {
+    width: 10%;
+    height: 100%;
+  }
 
-.comentariosConteiner{
-  width: 90%;
-}
-
+  .comentariosConteiner {
+    width: 90%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1058,10 +1048,10 @@ footer ::placeholder {
     width: 130px;
   }
 
-  .puntuaje{
+  .puntuaje {
     width: 5%;
   }
-  .comentariosConteiner{
+  .comentariosConteiner {
     width: 99%;
   }
 }

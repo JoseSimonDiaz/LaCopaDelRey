@@ -52,354 +52,354 @@ body::-webkit-scrollbar {
 /* fin body */
 
 header {
-    background: linear-gradient(to bottom, var(--primary), var(--background));
-    width: 100%;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    padding: 0px 13px 0 10px;
-    margin: 0 auto;
-  }
-  
-  header .logo {
-    width: 60px;
-    /* height: 78px; */
-    object-fit: cover;
-    border-radius: 15px;
-  }
-  
-  #menu-toggle,
-  #cart-toggle,
-  .menu-label {
-    display: none;
-  }
-  
-  /*search*/
-  
-  #header .searchContainer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #header .searchContainer form {
-    width: 300px;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #fff;
-    border-radius: 9px;
-    border: 1px solid var(--primari);
-  }
-  
-  #header .searchContainer form input {
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1.1rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  ::placeholder {
-    color: var(--background);
-    font-weight: 500;
-    font-size: 1.3rem;
-    /* padding: 3px; */
-  }
-  
-  #header .searchContainer form button {
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #header .searchContainer form button i {
-    color: var(--primary);
-    font-size: 1.6rem;
-    /* margin: 0 10px 0 10px; */
-    font-weight: 800;
-  }
-  
-  /*carrito*/
-  
-  .cart {
-    position: absolute;
-    top: 46px;
-    right: -28px;
-    width: 360px;
-    padding: 20px 30px;
-    background: linear-gradient(to top, var(--primary), var(--background));
-    border-left: 1px solid var(--nav-bg);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: calc(100vh - 65px);
-    overflow-y: scroll;
-    z-index: 2;
-    transform: translate(200%);
-    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
-  }
-  
-  /*OCULTAR BARRA DE SCROLL DEL CARRITO*/
-  
-  .cart::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .cart h2 {
-    color: var(--text-white);
-    font-size: 20px;
-    font-weight: 600;
-  }
-  
-  .cart-item {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9px;
-    /* background-color: var(--btn-bg); */
-    padding: 20px;
-    border: 1px solid var(--electric);
-    border-radius: 10px;
-  }
-  
-  .cart-item img {
-    height: 65px;
-    width: 65px;
-    border-radius: 10px;
-  }
-  
-  .item-info {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .item-title {
-    color: var(--text-white);
-    font-weight: 600;
-    font-size: 14px;
-  }
-  
-  .item-bid {
-    color: var(--text-gray);
-    font-weight: 300;
-    font-size: 12px;
-  }
-  
-  .item-price {
-    color: var(--text-gray);
-    font-size: 16px;
-    font-weight: 700;
-  }
-  
-  .item-handler {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .quantity-handler {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px 8px;
-    border-radius: 5px;
-    color: var(--text-white);
-    font-weight: 400;
-  }
-  
-  .item-quantity {
-    color: var(--text-gray);
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-  
-  .up {
-    border: 1px solid var(--electric);
-  }
-  
-  .down {
-    background-color: var(--secondary);
-    border: 1px solid var(--electric);
-  }
-  
-  .divider {
-    margin-top: 20px;
-    border: 0.5px solid var(--electric);
-  }
-  
-  .cart-total {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  
-  .cart-total p {
-    color: var(--text-white);
-    font-weight: 700;
-    font-size: 2rem;
-  }
-  
-  .cart-total span {
-    color: var(--text-white);
-    font-weight: 400;
-    font-size: 18px;
-  }
-  
-  .btn-add {
-    width: 100%;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: var(--btn-bg);
-    color: var(--text-white);
-    font-weight: 600;
-    font-size: 18px;
-    border: none;
-  }
-  .btn-add a {
-    text-decoration: none;
-    color: var(--text-white);
-    font-weight: 400;
-  }
-  .btn-add:hover {
-    cursor: pointer;
-    background-color: var(--fire);
-    transition: all 0.3s ease-in-out;
-  }
-  /*Toggle del carro*/
-  #cart-toggle:checked + .cart {
-    transform: translate(0%);
-    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
-  }
-  
-  /*Toggle del menu*/
-  .navbar,
-  .navbar-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .navbar {
-    gap: 10px;
-  }
-  
-  .navbar-list {
-    position: absolute;
-    top: 47px;
-    left: -227px;
-    width: 300px;
-    flex-direction: column;
-    background: linear-gradient(to top, var(--primary), var(--background));
-    border: 2px solid var(--electric);
-    border-top: 0px;
-    border-radius: 0px 0px 15px 15px;
-    align-items: flex-start;
-    padding: 45px 30px;
-    gap: 25px;
-    z-index: 2;
-    display: none;
-  }
-  
-  .navbar-list a {
-    color: var(--text-gray);
-    font-size: 18px;
-    text-decoration: none;
-  }
-  
-  .navbar-list li:first-child > a {
-    color: var(--text-white);
-    font-weight: 600;
-  }
-  
-  /* Mostramos el icono del menu */
-  .menu-label {
-    display: flex;
-    order: 2;
-    cursor: pointer;
-  }
-  
-  .menu-label img {
-    height: 20px;
-    width: 25px;
-  }
-  
-  #menu-toggle:checked + .navbar-list {
-    display: flex;
-  }
-  
-  .cart-icon {
-    font-weight: 600;
-    border-radius: 10px;
-    margin-right: 1rem;
-    font-size: 18px;
-    color: var(--text-white);
-    cursor: pointer;
-  }
-  
-  .navbar-list li {
-    position: relative;
-    padding: 0;
-  }
-  
-  .navbar-list li a::after {
-    content: "";
-    height: 2px;
-    width: 100%;
-    background: var(--text-white);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.15s ease;
-  }
-  
-  .navbar-list li a:hover::after {
-    transform-origin: bottom left;
-    transform: scaleX(1);
-  }
-  
-  #iniciarSesion {
-    background-color: var(--btn-bg);
-    border-radius: 10px;
-    height: 40px;
-    font-weight: 500;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #iniciarSesion a {
-    font-size: 2rem;
-    color: var(--bg-white);
-  }
-  
-  #iniciarSesion:hover {
-    background-color: var(--fire);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-  }
-  
-  /*fin header*/
+  background: linear-gradient(to bottom, var(--primary), var(--background));
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0px 13px 0 10px;
+  margin: 0 auto;
+}
+
+header .logo {
+  width: 60px;
+  /* height: 78px; */
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+#menu-toggle,
+#cart-toggle,
+.menu-label {
+  display: none;
+}
+
+/*search*/
+
+#header .searchContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header .searchContainer form {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 9px;
+  border: 1px solid var(--primari);
+}
+
+#header .searchContainer form input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+::placeholder {
+  color: var(--background);
+  font-weight: 500;
+  font-size: 1.3rem;
+  /* padding: 3px; */
+}
+
+#header .searchContainer form button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header .searchContainer form button i {
+  color: var(--primary);
+  font-size: 1.6rem;
+  /* margin: 0 10px 0 10px; */
+  font-weight: 800;
+}
+
+/*carrito*/
+
+.cart {
+  position: absolute;
+  top: 46px;
+  right: -28px;
+  width: 360px;
+  padding: 20px 30px;
+  background: linear-gradient(to top, var(--primary), var(--background));
+  border-left: 1px solid var(--nav-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: calc(100vh - 65px);
+  overflow-y: scroll;
+  z-index: 2;
+  transform: translate(200%);
+  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+/*OCULTAR BARRA DE SCROLL DEL CARRITO*/
+
+.cart::-webkit-scrollbar {
+  display: none;
+}
+
+.cart h2 {
+  color: var(--text-white);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cart-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  /* background-color: var(--btn-bg); */
+  padding: 20px;
+  border: 1px solid var(--electric);
+  border-radius: 10px;
+}
+
+.cart-item img {
+  height: 65px;
+  width: 65px;
+  border-radius: 10px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-title {
+  color: var(--text-white);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.item-bid {
+  color: var(--text-gray);
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.item-price {
+  color: var(--text-gray);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.item-handler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.quantity-handler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 5px;
+  color: var(--text-white);
+  font-weight: 400;
+}
+
+.item-quantity {
+  color: var(--text-gray);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.up {
+  border: 1px solid var(--electric);
+}
+
+.down {
+  background-color: var(--secondary);
+  border: 1px solid var(--electric);
+}
+
+.divider {
+  margin-top: 20px;
+  border: 0.5px solid var(--electric);
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.cart-total p {
+  color: var(--text-white);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.cart-total span {
+  color: var(--text-white);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.btn-add {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--btn-bg);
+  color: var(--text-white);
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+}
+.btn-add a {
+  text-decoration: none;
+  color: var(--text-white);
+  font-weight: 400;
+}
+.btn-add:hover {
+  cursor: pointer;
+  background-color: var(--fire);
+  transition: all 0.3s ease-in-out;
+}
+/*Toggle del carro*/
+#cart-toggle:checked + .cart {
+  transform: translate(0%);
+  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+/*Toggle del menu*/
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  gap: 10px;
+}
+
+.navbar-list {
+  position: absolute;
+  top: 47px;
+  left: -227px;
+  width: 300px;
+  flex-direction: column;
+  background: linear-gradient(to top, var(--primary), var(--background));
+  border: 2px solid var(--electric);
+  border-top: 0px;
+  border-radius: 0px 0px 15px 15px;
+  align-items: flex-start;
+  padding: 45px 30px;
+  gap: 25px;
+  z-index: 2;
+  display: none;
+}
+
+.navbar-list a {
+  color: var(--text-gray);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navbar-list li:first-child > a {
+  color: var(--text-white);
+  font-weight: 600;
+}
+
+/* Mostramos el icono del menu */
+.menu-label {
+  display: flex;
+  order: 2;
+  cursor: pointer;
+}
+
+.menu-label img {
+  height: 20px;
+  width: 25px;
+}
+
+#menu-toggle:checked + .navbar-list {
+  display: flex;
+}
+
+.cart-icon {
+  font-weight: 600;
+  border-radius: 10px;
+  margin-right: 1rem;
+  font-size: 18px;
+  color: var(--text-white);
+  cursor: pointer;
+}
+
+.navbar-list li {
+  position: relative;
+  padding: 0;
+}
+
+.navbar-list li a::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--text-white);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.15s ease;
+}
+
+.navbar-list li a:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+#iniciarSesion {
+  background-color: var(--btn-bg);
+  border-radius: 10px;
+  height: 40px;
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#iniciarSesion a {
+  font-size: 2rem;
+  color: var(--bg-white);
+}
+
+#iniciarSesion:hover {
+  background-color: var(--fire);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/*fin header*/
 /* main */
 
-main{
+main {
   width: 100%;
   background: linear-gradient(to bottom, var(--background), var(--primary));
   height: 100%;
@@ -410,18 +410,18 @@ main{
   padding-bottom: 20px;
 }
 
-main h1{
-    color: var(--bg-azul-10);
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 5px;
+main h1 {
+  color: var(--bg-azul-10);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 
-main .parrafo1{
-    width: 100%;
-    display: flex;
-    margin: 10px;
+main .parrafo1 {
+  width: 100%;
+  display: flex;
+  margin: 10px;
 }
 
 main .containerIMG {
@@ -430,30 +430,28 @@ main .containerIMG {
   justify-content: center;
   align-items: center;
   margin: 5px;
- 
 }
 
-main .containerIMG img{
-    width: 400px;
-    object-fit: cover;
-    border-radius: 10px;
+main .containerIMG img {
+  width: 400px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-main .text{
+main .text {
   width: 100%;
-  
-  
+
   padding: 10px;
 }
 
-main .text p{
+main .text p {
   color: var(--bg-white);
   font-size: 1.5rem;
   font-weight: 500;
   margin: 0;
 }
 
-.conteinerNosotros{
+.conteinerNosotros {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -464,13 +462,13 @@ main .text p{
   padding: 15px;
 }
 
-.conteinerNosotros h2{
+.conteinerNosotros h2 {
   font-size: 2.3rem;
   font-weight: 700;
   text-align: center;
 }
 
-.conteinerNosotros .conteinerDev{
+.conteinerNosotros .conteinerDev {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -478,7 +476,7 @@ main .text p{
   gap: 10px;
 }
 
-.conteinerNosotros .conteinerDev .nosotros{
+.conteinerNosotros .conteinerDev .nosotros {
   width: 190px;
   background-color: var(--bg-white);
   padding: 10px;
@@ -489,7 +487,7 @@ main .text p{
   gap: 10px;
 }
 
-.conteinerNosotros .conteinerDev .nosotros .conteinerIMG{
+.conteinerNosotros .conteinerDev .nosotros .conteinerIMG {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -497,20 +495,19 @@ main .text p{
   overflow: hidden;
 }
 
-.conteinerNosotros .conteinerDev .nosotros .conteinerIMG img{
+.conteinerNosotros .conteinerDev .nosotros .conteinerIMG img {
   width: 100px;
   object-fit: cover;
   border-radius: 50%;
-
 }
 
-.conteinerNosotros .conteinerDev .nosotros h3{
+.conteinerNosotros .conteinerDev .nosotros h3 {
   font-size: 1.7rem;
   font-weight: 700;
   text-align: center;
 }
 
-.conteinerNosotros .conteinerDev .nosotros p{
+.conteinerNosotros .conteinerDev .nosotros p {
   font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
@@ -648,7 +645,7 @@ ul {
   color: #fff;
 }
 
-footer ::placeholder{
+footer ::placeholder {
   color: var(--nav-bg);
   font-weight: 400;
 }
@@ -692,7 +689,6 @@ footer ::placeholder{
 /*fin footer*/
 
 @media (min-width: 768px) {
-
   #iniciarSesion {
     height: 60px;
     width: 150px;
@@ -716,7 +712,7 @@ footer ::placeholder{
     z-index: 2;
     transform: translate(200%);
     transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
-}
+  }
 
   #menu-toggle,
   #cart-toggle,
@@ -725,14 +721,14 @@ footer ::placeholder{
   }
 
   .navbar-list {
-   position:initial;
-   align-items: center;   
-   flex-direction: row;
-   display: flex;
-   border: none;
-   background: transparent;
-   justify-content: flex-end;
-   align-items: center;
+    position: initial;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    border: none;
+    background: transparent;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   #gif .IMG img {
@@ -746,20 +742,17 @@ footer ::placeholder{
     width: 100%;
   }
 
-
-  main .text{
+  main .text {
     text-align: center;
   }
- 
-  .conteinerNosotros{
+
+  .conteinerNosotros {
     margin: 0 300px 0 300px;
   }
-
 }
 
-
 @media (min-width: 1024px) {
-  .navbar-list{
+  .navbar-list {
     margin: 10px;
   }
 }
