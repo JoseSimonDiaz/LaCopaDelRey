@@ -517,6 +517,7 @@ ul {
   background: #151414;
   position: relative;
   /* padding: 5px; */
+  width: 100%;
 }
 .footer-cta {
   border-bottom: 1px solid #373636;
